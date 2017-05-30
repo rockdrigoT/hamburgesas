@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="hamburgesas" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre de la hamburgesa" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LD2-6T-fKl">
+                                <rect key="frame" x="86.5" y="389" width="202.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yWc-Ll-Y1v">
+                                <rect key="frame" x="103" y="133" width="169" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Quiero una hamburgesa!"/>
+                                <connections>
+                                    <action selector="cambiar" destination="BYZ-38-t0r" eventType="touchUpInside" id="MCd-1A-Qyd"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre del país" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kR6-lo-bXf">
+                                <rect key="frame" x="125" y="288" width="125" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.77747398680000002" green="0.96717664930000002" blue="0.71821980169999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="LD2-6T-fKl" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="369" id="Lo5-uo-8SW"/>
+                            <constraint firstItem="kR6-lo-bXf" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="268" id="N3e-Rd-I2E"/>
+                            <constraint firstItem="yWc-Ll-Y1v" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="113" id="ZyT-0q-9Y6"/>
+                            <constraint firstItem="yWc-Ll-Y1v" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="crh-iM-g9c"/>
+                            <constraint firstItem="LD2-6T-fKl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xAU-vn-YhJ"/>
+                            <constraint firstItem="kR6-lo-bXf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yVY-47-Ug7"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="muestraHamburgesas" destination="LD2-6T-fKl" id="mP7-k6-JYC"/>
+                        <outlet property="muestraPaises" destination="kR6-lo-bXf" id="LZC-QU-VTU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+</document>
